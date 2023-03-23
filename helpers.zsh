@@ -14,6 +14,10 @@ function git-soft() {
   git reset --soft HEAD~$1
 }
 
+function git-diff-file() {
+  git diff > changes.patch
+}
+
 function get-pid() {
   lsof -i :$1
 }
