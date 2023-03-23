@@ -18,6 +18,10 @@ function git-diff-file() {
   git diff > changes.patch
 }
 
+function git-apply-diff-file() {
+  git apply $1
+}
+
 function get-pid() {
   lsof -i :$1
 }
